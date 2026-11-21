@@ -202,7 +202,102 @@
             </div>
           </div>
 
-          <!-- 3. Insights -->
+          <!-- 3. Industries (Dropdown with 7 Industry Pages) -->
+          <div class="relative nav-dropdown">
+            <button type="button" id="nav-industries"
+                    class="nav-link inline-flex items-center gap-1.5 px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-100/80 transition-colors">
+              <span>Industries</span>
+              <svg class="w-4 h-4 text-slate-400 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+            <div class="nav-dropdown-menu absolute left-0 mt-1 w-[34rem] rounded-2xl bg-white shadow-xl border border-slate-200/90 p-3 z-50">
+              <div class="px-3 py-2 border-b border-slate-100 mb-2 flex items-center justify-between">
+                <p class="text-[11px] font-bold uppercase tracking-wider text-slate-400">Sectors &amp; Societal Impact</p>
+                <span class="text-[11px] font-semibold text-emerald-600">7 Core Industries</span>
+              </div>
+              <div class="grid grid-cols-2 gap-1.5">
+                <a href="#industries/healthcare" data-route="industries/healthcare"
+                   class="flex items-start gap-2.5 p-2.5 rounded-xl hover:bg-rose-50/70 transition-colors group">
+                  <span class="w-8 h-8 rounded-lg bg-rose-100 text-rose-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                  </span>
+                  <div>
+                    <div class="text-xs font-bold text-navy-900 group-hover:text-rose-600">Healthcare &amp; Life Sciences</div>
+                    <div class="text-[11px] text-slate-500">Patient care &amp; clinical AI</div>
+                  </div>
+                </a>
+
+                <a href="#industries/bfsi" data-route="industries/bfsi"
+                   class="flex items-start gap-2.5 p-2.5 rounded-xl hover:bg-blue-50/70 transition-colors group">
+                  <span class="w-8 h-8 rounded-lg bg-blue-100 text-blue-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-blue-600 group-hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </span>
+                  <div>
+                    <div class="text-xs font-bold text-navy-900 group-hover:text-blue-600">Banking, Finance &amp; Insurance</div>
+                    <div class="text-[11px] text-slate-500">Ethical credit &amp; risk trust</div>
+                  </div>
+                </a>
+
+                <a href="#industries/retail" data-route="industries/retail"
+                   class="flex items-start gap-2.5 p-2.5 rounded-xl hover:bg-indigo-50/70 transition-colors group">
+                  <span class="w-8 h-8 rounded-lg bg-indigo-100 text-indigo-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-indigo-600 group-hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                  </span>
+                  <div>
+                    <div class="text-xs font-bold text-navy-900 group-hover:text-indigo-600">Retail &amp; E-Commerce</div>
+                    <div class="text-[11px] text-slate-500">Zero-waste omnichannel AI</div>
+                  </div>
+                </a>
+
+                <a href="#industries/manufacturing" data-route="industries/manufacturing"
+                   class="flex items-start gap-2.5 p-2.5 rounded-xl hover:bg-amber-50/70 transition-colors group">
+                  <span class="w-8 h-8 rounded-lg bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                  </span>
+                  <div>
+                    <div class="text-xs font-bold text-navy-900 group-hover:text-amber-600">Manufacturing &amp; Supply Chain</div>
+                    <div class="text-[11px] text-slate-500">Green factories &amp; IIoT</div>
+                  </div>
+                </a>
+
+                <a href="#industries/energy" data-route="industries/energy"
+                   class="flex items-start gap-2.5 p-2.5 rounded-xl hover:bg-emerald-50/70 transition-colors group">
+                  <span class="w-8 h-8 rounded-lg bg-emerald-100 text-emerald-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                  </span>
+                  <div>
+                    <div class="text-xs font-bold text-navy-900 group-hover:text-emerald-600">Energy &amp; Utilities</div>
+                    <div class="text-[11px] text-slate-500">Clean grid &amp; decarbonization</div>
+                  </div>
+                </a>
+
+                <a href="#industries/education" data-route="industries/education"
+                   class="flex items-start gap-2.5 p-2.5 rounded-xl hover:bg-purple-50/70 transition-colors group">
+                  <span class="w-8 h-8 rounded-lg bg-purple-100 text-purple-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-purple-600 group-hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/></svg>
+                  </span>
+                  <div>
+                    <div class="text-xs font-bold text-navy-900 group-hover:text-purple-600">Education &amp; EdTech</div>
+                    <div class="text-[11px] text-slate-500">Equitable adaptive learning</div>
+                  </div>
+                </a>
+
+                <a href="#industries/public-sector" data-route="industries/public-sector"
+                   class="col-span-2 flex items-start gap-2.5 p-2.5 rounded-xl hover:bg-teal-50/70 transition-colors group border-t border-slate-100 mt-0.5 pt-2.5">
+                  <span class="w-8 h-8 rounded-lg bg-teal-100 text-teal-600 flex items-center justify-center shrink-0 mt-0.5 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  </span>
+                  <div>
+                    <div class="text-xs font-bold text-navy-900 group-hover:text-teal-600">Public Sector &amp; Smart Cities</div>
+                    <div class="text-[11px] text-slate-500">Transparent governance, clean urban mobility &amp; citizen welfare</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Insights -->
           <a href="#insights" data-route="insights" id="nav-insights"
              class="nav-link px-4 py-2.5 rounded-lg text-sm font-semibold text-slate-700 hover:text-blue-600 hover:bg-slate-100/80 transition-colors">
             Insights
@@ -299,6 +394,39 @@
         </div>
       </div>
 
+      <!-- Mobile Industries Accordion -->
+      <div class="rounded-xl bg-slate-50/80 border border-slate-200/70 overflow-hidden">
+        <button type="button" id="mobile-industries-toggle" class="w-full flex items-center justify-between px-4 py-3 text-base font-semibold text-navy-900">
+          <span>Industries</span>
+          <svg id="mobile-industries-chevron" class="w-5 h-5 text-slate-500 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </button>
+        <div id="mobile-industries-list" class="hidden px-3 pb-3 space-y-1">
+          <a href="#industries/healthcare" data-route="industries/healthcare" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-white hover:text-blue-600">
+            1. Healthcare &amp; Life Sciences
+          </a>
+          <a href="#industries/bfsi" data-route="industries/bfsi" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-white hover:text-blue-600">
+            2. Banking, Financial Services &amp; Insurance
+          </a>
+          <a href="#industries/retail" data-route="industries/retail" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-white hover:text-blue-600">
+            3. Retail &amp; E-Commerce
+          </a>
+          <a href="#industries/manufacturing" data-route="industries/manufacturing" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-white hover:text-blue-600">
+            4. Manufacturing &amp; Supply Chain
+          </a>
+          <a href="#industries/energy" data-route="industries/energy" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-white hover:text-blue-600">
+            5. Energy &amp; Utilities
+          </a>
+          <a href="#industries/education" data-route="industries/education" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-white hover:text-blue-600">
+            6. Education &amp; EdTech
+          </a>
+          <a href="#industries/public-sector" data-route="industries/public-sector" class="mobile-nav-link block px-3 py-2.5 rounded-lg text-sm font-medium text-slate-700 hover:bg-white hover:text-blue-600">
+            7. Public Sector &amp; Smart Cities
+          </a>
+        </div>
+      </div>
+
       <a href="#insights" data-route="insights" class="mobile-nav-link block px-4 py-3 rounded-xl text-base font-semibold text-navy-900 hover:bg-slate-100">
         Insights &amp; Case Studies
       </a>
@@ -340,10 +468,10 @@
        ===================================================================== -->
   <footer class="bg-navy-950 text-slate-300 border-t border-slate-800/80">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-16 pb-12">
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 pb-12 border-b border-slate-800">
 
         <!-- Brand Column -->
-        <div class="lg:col-span-4 space-y-5">
+        <div class="lg:col-span-3 space-y-5">
           <a href="#home" data-route="home" class="inline-flex items-center gap-3">
             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-teal-500 p-0.5">
               <div class="w-full h-full bg-navy-900 rounded-[10px] flex items-center justify-center">
@@ -358,9 +486,9 @@
             </span>
           </a>
           <p class="text-sm text-slate-400 leading-relaxed">
-            Bridging strategic business consulting with deep data and AI engineering. We empower enterprises to build trusted data foundations, experience-led products, and measurable revenue growth.
+            Bridging strategic business consulting with deep data and AI engineering. We empower enterprises to build trusted data foundations, experience-led products, and positive societal impact.
           </p>
-          <div class="flex items-center gap-3 pt-1">
+          <div class="flex flex-wrap items-center gap-2 pt-1">
             <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-slate-900 text-teal-400 border border-slate-800">
               <span class="w-2 h-2 rounded-full bg-teal-400 animate-pulse"></span>
               Enterprise Ready
@@ -372,7 +500,7 @@
         </div>
 
         <!-- Services Links (All 5 Service Pages) -->
-        <div class="lg:col-span-4 space-y-4">
+        <div class="lg:col-span-3 space-y-4">
           <h3 class="font-display font-bold text-sm uppercase tracking-wider text-white">Our Services</h3>
           <ul class="space-y-2.5 text-sm">
             <li><a href="#services/data-governance" data-route="services/data-governance" class="text-slate-400 hover:text-white transition-colors">Data Governance &amp; Compliance</a></li>
@@ -380,6 +508,20 @@
             <li><a href="#services/master-data-management" data-route="services/master-data-management" class="text-slate-400 hover:text-white transition-colors">Master Data Management (MDM)</a></li>
             <li><a href="#services/data-engineering" data-route="services/data-engineering" class="text-slate-400 hover:text-white transition-colors">Data Engineering &amp; Cloud Lakehouse</a></li>
             <li><a href="#services/business-intelligence" data-route="services/business-intelligence" class="text-slate-400 hover:text-white transition-colors">Business Intelligence Reporting</a></li>
+          </ul>
+        </div>
+
+        <!-- Industries Links (All 7 Industry Pages) -->
+        <div class="lg:col-span-2 space-y-4">
+          <h3 class="font-display font-bold text-sm uppercase tracking-wider text-white">Industries</h3>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#industries/healthcare" data-route="industries/healthcare" class="text-slate-400 hover:text-white transition-colors">Healthcare &amp; Life Sciences</a></li>
+            <li><a href="#industries/bfsi" data-route="industries/bfsi" class="text-slate-400 hover:text-white transition-colors">Banking, Finance &amp; Insurance</a></li>
+            <li><a href="#industries/retail" data-route="industries/retail" class="text-slate-400 hover:text-white transition-colors">Retail &amp; E-Commerce</a></li>
+            <li><a href="#industries/manufacturing" data-route="industries/manufacturing" class="text-slate-400 hover:text-white transition-colors">Manufacturing &amp; Supply Chain</a></li>
+            <li><a href="#industries/energy" data-route="industries/energy" class="text-slate-400 hover:text-white transition-colors">Energy &amp; Utilities</a></li>
+            <li><a href="#industries/education" data-route="industries/education" class="text-slate-400 hover:text-white transition-colors">Education &amp; EdTech</a></li>
+            <li><a href="#industries/public-sector" data-route="industries/public-sector" class="text-slate-400 hover:text-white transition-colors">Public Sector &amp; Smart Cities</a></li>
           </ul>
         </div>
 
@@ -613,298 +755,554 @@
       },
 
       /**
+       * 7 CORE INDUSTRIES:
+       * Each with sector-specific requirements, how Piruzi Infotech's 5 domains solve them,
+       * and a dedicated "Making the World a Better Place" societal & sustainability impact section.
+       */
+      industries: {
+        'healthcare': {
+          id: 'healthcare',
+          slug: 'industries/healthcare',
+          shortTitle: 'Healthcare & Life Sciences',
+          title: 'Healthcare & Life Sciences',
+          tagline: 'Unifying clinical, genomic, and operational data to accelerate life-saving treatments, safeguard patient privacy, and expand equitable care.',
+          accent: 'rose',
+          heroImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1400&q=80',
+          overview: 'Healthcare networks, pharmaceutical innovators, and life sciences organizations sit on vast repositories of Electronic Health Records (EHR), clinical trial telemetry, and population health data. Piruzi Infotech helps care providers unlock interoperability and predictive diagnostics while maintaining uncompromising patient trust.',
+          requirements: [
+            {
+              title: 'HIPAA, DPDPA & Clinical Privacy Compliance',
+              desc: 'Enforce strict zero-trust access controls, automated PII/PHI de-identification, and auditable consent lineage across research and care environments.'
+            },
+            {
+              title: 'Clinical Interoperability (HL7 / FHIR)',
+              desc: 'Break down fragmented hospital EHR, lab, imaging, and pharmacy silos into longitudinal, real-time patient health timelines.'
+            },
+            {
+              title: 'Unified Patient, Provider & Formulary MDM',
+              desc: 'Eliminate duplicate patient medical records (EMPI) and synchronize clinician credentials and drug master catalogs across care facilities.'
+            },
+            {
+              title: 'Predictive Risk & Clinical Trial Analytics',
+              desc: 'Identify high-risk readmission cohorts early, optimize ICU bed capacity, and accelerate biomarker discovery for targeted therapies.'
+            }
+          ],
+          solutionsMapping: [
+            { service: 'Data Governance', detail: 'Automated PHI tagging, dynamic data masking, and HIPAA/DPDPA compliance audit trails.' },
+            { service: 'Master Data Management', detail: 'Enterprise Master Patient Index (EMPI) and unified provider/facility golden records.' },
+            { service: 'Data Engineering', detail: 'Real-time HL7/FHIR streaming lakehouses uniting clinical, claims, and wearable telemetry.' },
+            { service: 'AI & BI Intelligence', detail: 'Sepsis/readmission early-warning ML models and hospital capacity command centers.' }
+          ],
+          worldImpact: {
+            headline: 'Advancing Equitable Healthcare & Saving Lives Through Trusted Data',
+            narrative: 'When clinical data flows securely and accurately, doctors intervene sooner, rural clinics gain specialist-grade predictive insights, and life-saving therapies reach patients years faster. Piruzi Infotech ensures patient privacy is never a barrier to medical breakthroughs.',
+            metrics: [
+              { value: '28%', label: 'Reduction in Preventable Hospital Readmissions' },
+              { value: '5x', label: 'Faster Clinical Research Dataset Provisioning' },
+              { value: '12M+', label: 'Patient Records Protected With Zero-Trust Privacy' }
+            ],
+            pillars: [
+              'Expanding predictive maternal and chronic-care screening to underserved rural health networks.',
+              'Accelerating precision oncology and rare-disease drug trials via federated, privacy-safe cohort discovery.',
+              'Reducing clinician administrative burnout by automating compliance and quality reporting.'
+            ]
+          },
+          relatedCaseStudyId: 'dg-2'
+        },
+
+        'bfsi': {
+          id: 'bfsi',
+          slug: 'industries/bfsi',
+          shortTitle: 'Banking, Finance & Insurance',
+          title: 'Banking, Financial Services & Insurance (BFSI)',
+          tagline: 'Powering regulatory resilience, real-time fraud defense, and inclusive, bias-free financial access across global markets.',
+          accent: 'blue',
+          heroImage: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=80',
+          overview: 'Banks, wealth managers, and insurers navigate intense regulatory scrutiny alongside rising customer expectations for instant, personalized digital banking. Piruzi Infotech modernizes core financial data estates—replacing brittle legacy batch systems with governed, real-time intelligence.',
+          requirements: [
+            {
+              title: 'BCBS 239, GDPR & Solvency Auditability',
+              desc: 'Maintain end-to-end column-level lineage from transaction ingestion to regulatory capital and statutory risk reports.'
+            },
+            {
+              title: 'Sub-Second Fraud & AML Telemetry',
+              desc: 'Ingest and score millions of payment and claims events in real time to intercept synthetic identity fraud and money laundering.'
+            },
+            {
+              title: 'Customer 360 & Household Golden Records',
+              desc: 'Reconcile fragmented retail banking, mortgage, card, and insurance policy profiles into a single trusted household view.'
+            },
+            {
+              title: 'Explainable AI Underwriting & Hyper-Personalization',
+              desc: 'Deliver transparent, auditable credit scoring and timely financial wellness nudges without algorithmic bias.'
+            }
+          ],
+          solutionsMapping: [
+            { service: 'Data Governance', detail: 'Critical Data Element (CDE) lineage, automated BCBS 239 certification, and regulatory data catalogs.' },
+            { service: 'Master Data Management', detail: 'Multi-domain Customer 360 and legal-entity hierarchy management across subsidiaries.' },
+            { service: 'Data Engineering', detail: 'Low-latency Kafka & Databricks lakehouses processing 50M+ daily payment events.' },
+            { service: 'AI & BI Intelligence', detail: 'Explainable credit propensity engines, churn prevention, and real-time liquidity BI.' }
+          ],
+          worldImpact: {
+            headline: 'Expanding Financial Inclusion & Protecting Families From Financial Crime',
+            narrative: 'Ethical, well-governed financial data opens doors to fair credit for small businesses and first-time borrowers while shielding vulnerable citizens from digital fraud and predatory lending.',
+            metrics: [
+              { value: '99.6%', label: 'Regulatory Risk & Solvency Audit Readiness' },
+              { value: '<30 sec', label: 'Real-Time Fraud & Settlement Visibility' },
+              { value: '+32%', label: 'Fair Credit Access for Thin-File Micro-Entrepreneurs' }
+            ],
+            pillars: [
+              'Eliminating demographic bias in AI credit underwriting through continuous fairness auditing and alternative cash-flow signals.',
+              'Protecting elderly and retail banking customers via sub-second behavioral fraud interception.',
+              'Empowering micro, small, and medium enterprises (MSMEs) with transparent working-capital access.'
+            ]
+          },
+          relatedCaseStudyId: 'dg-1'
+        },
+
+        'retail': {
+          id: 'retail',
+          slug: 'industries/retail',
+          shortTitle: 'Retail & E-Commerce',
+          title: 'Retail & Consumer E-Commerce',
+          tagline: 'Connecting omnichannel customer journeys, unified product catalogs, and AI demand intelligence to delight shoppers and eliminate supply waste.',
+          accent: 'indigo',
+          heroImage: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1400&q=80',
+          overview: 'Modern retail winners compete on hyper-relevant customer experiences and razor-sharp inventory precision. Piruzi Infotech helps D2C brands and global omnichannel retailers unify online and in-store signals, standardize millions of SKUs, and predict demand down to the hyper-local store level.',
+          requirements: [
+            {
+              title: 'Omnichannel Inventory & Order Synchronization',
+              desc: 'Eliminate stockouts and overselling by unifying POS, e-commerce, warehouse, and third-party marketplace streams in real time.'
+            },
+            {
+              title: 'Product Information & SKU Golden Records (PIM/MDM)',
+              desc: 'Standardize rich product attributes, sustainability certifications, and supplier taxonomies across global digital storefronts.'
+            },
+            {
+              title: 'AI Personalization & Lifetime Value Optimization',
+              desc: 'Replace margin-eroding mass discounts with individualized Next-Best-Offer recommendations and churn prediction.'
+            },
+            {
+              title: 'Shift-Left Data Contracts Across Microservices',
+              desc: 'Prevent checkout and loyalty schema changes from breaking downstream marketing attribution and financial reporting.'
+            }
+          ],
+          solutionsMapping: [
+            { service: 'AI Marketing & Product', detail: 'Real-time propensity models, dynamic pricing, and personalized recommendation APIs.' },
+            { service: 'Master Data Management', detail: 'Multi-channel Product/SKU and Customer Loyalty 360 golden record hubs.' },
+            { service: 'Data Governance', detail: 'CI/CD Data Contracts and GDPR/CCPA customer consent governance.' },
+            { service: 'BI Reporting', detail: 'Unified GMV, cohort retention, and store-level margin command centers.' }
+          ],
+          worldImpact: {
+            headline: 'Slashing Overproduction, Packaging Waste & Perishable Spoilage',
+            narrative: 'Inaccurate demand forecasting drives billions of tons of landfill apparel waste and spoiled food every year. By aligning precision AI forecasting with transparent supply chains, Piruzi Infotech helps retailers produce only what communities truly need.',
+            metrics: [
+              { value: '-31%', label: 'Reduction in Perishable & Dead-Stock Inventory Waste' },
+              { value: '+34%', label: 'Repeat Customer Retention & LTV Lift' },
+              { value: '100%', label: 'Traceable Ethical Supplier Attribute Coverage' }
+            ],
+            pillars: [
+              'Cutting food and apparel overproduction through granular hyper-local AI demand sensing.',
+              'Giving conscious consumers verified visibility into sustainable sourcing and product carbon footprints.',
+              'Optimizing last-mile delivery batching to lower urban delivery vehicle emissions.'
+            ]
+          },
+          relatedCaseStudyId: 'ai-1'
+        },
+
+        'manufacturing': {
+          id: 'manufacturing',
+          slug: 'industries/manufacturing',
+          shortTitle: 'Manufacturing & Supply Chain',
+          title: 'Manufacturing & Global Supply Chain',
+          tagline: 'Transforming factory floors and multi-tier supplier networks with IIoT data engineering, unified BOM/vendor MDM, and predictive resilience.',
+          accent: 'amber',
+          heroImage: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1400&q=80',
+          overview: 'Industrial manufacturers face volatile supply chains, fragmented ERP landscapes across acquired plants, and urgent mandates to decarbonize production. Piruzi Infotech builds unified industrial data backbones that connect shop-floor telemetry with global procurement and quality analytics.',
+          requirements: [
+            {
+              title: 'Multi-ERP Supplier & Bill-of-Materials (BOM) MDM',
+              desc: 'Consolidate duplicate vendor profiles and standardize engineering part numbers across dozens of regional SAP and Oracle instances.'
+            },
+            {
+              title: 'High-Frequency IIoT & Edge Telemetry Pipelines',
+              desc: 'Stream PLC, SCADA, and machine sensor telemetry into cloud lakehouses for real-time OEE and quality anomaly detection.'
+            },
+            {
+              title: 'Predictive Equipment Maintenance',
+              desc: 'Anticipate bearing, turbine, and robotic line failures days in advance to eliminate unplanned downtime and safety hazards.'
+            },
+            {
+              title: 'Scope 1, 2 & 3 Supply Chain Emissions Tracking',
+              desc: 'Trace material provenance and energy intensity across Tier-1 and Tier-2 suppliers for auditable ESG disclosures.'
+            }
+          ],
+          solutionsMapping: [
+            { service: 'Master Data Management', detail: 'Global Supplier, Material/SKU, and Asset MDM hubs synchronized with SAP S/4HANA.' },
+            { service: 'Data Engineering', detail: 'Real-time IIoT streaming lakehouses and automated ERP data ingestion pipelines.' },
+            { service: 'BI Reporting', detail: 'Plant-by-plant OEE, OTIF delivery, and lane profitability executive dashboards.' },
+            { service: 'Data Governance', detail: 'Auditable ESG, quality compliance (ISO/IATF), and supplier risk data standards.' }
+          ],
+          worldImpact: {
+            headline: 'Building Zero-Defect Green Factories & Safer Industrial Workplaces',
+            narrative: 'Smarter factories consume dramatically less raw energy, generate far less scrap metal and chemical waste, and protect frontline workers through predictive equipment safety monitoring.',
+            metrics: [
+              { value: '-24%', label: 'Industrial Energy & Scrap Material Reduction' },
+              { value: '$4.2M+', label: 'Duplicate Supplier Spend Unlocked per Enterprise' },
+              { value: '45%', label: 'Reduction in Unplanned Critical Line Downtime' }
+            ],
+            pillars: [
+              'Lowering industrial greenhouse gas emissions via real-time energy-per-unit optimization.',
+              'Preventing catastrophic machinery failures to keep shop-floor technicians and operators safe.',
+              'Building resilient, ethical supply chains with full visibility into responsible mineral and material sourcing.'
+            ]
+          },
+          relatedCaseStudyId: 'mdm-1'
+        },
+
+        'energy': {
+          id: 'energy',
+          slug: 'industries/energy',
+          shortTitle: 'Energy & Utilities',
+          title: 'Energy, Renewables & Smart Utilities',
+          tagline: 'Accelerating the clean-energy transition with smart-grid data engineering, renewable asset MDM, and predictive load intelligence.',
+          accent: 'emerald',
+          heroImage: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?auto=format&fit=crop&w=1400&q=80',
+          overview: 'Power utilities and renewable energy operators are managing a historic shift toward distributed solar, wind, battery storage, and EV charging grids. Piruzi Infotech engineers scalable telemetry and governance platforms that keep clean grids balanced, reliable, and affordable.',
+          requirements: [
+            {
+              title: 'Smart Meter (AMI) & Grid Sensor Streaming',
+              desc: 'Ingest millions of 15-minute interval smart-meter and substation readings to detect voltage anomalies and distribution losses.'
+            },
+            {
+              title: 'Distributed Energy Resource (DER) & Asset MDM',
+              desc: 'Maintain accurate golden records for wind turbines, solar inverters, transformers, and grid interconnection points.'
+            },
+            {
+              title: 'Renewable Generation & Peak Load Forecasting',
+              desc: 'Combine weather telemetry with historical consumption models to balance intermittent renewables and reduce fossil peaker-plant reliance.'
+            },
+            {
+              title: 'NERC CIP & Environmental Regulatory Reporting',
+              desc: 'Ensure critical infrastructure data security, grid reliability metrics, and verifiable carbon-offset reporting.'
+            }
+          ],
+          solutionsMapping: [
+            { service: 'Data Engineering', detail: 'High-volume time-series lakehouses for smart-meter, SCADA, and weather streams.' },
+            { service: 'Master Data Management', detail: 'Grid asset, substation, and commercial/residential meter golden record hierarchies.' },
+            { service: 'AI Marketing & Product', detail: 'AI load-shifting demand response programs and consumer energy-efficiency portals.' },
+            { service: 'BI Reporting', detail: 'Outage restoration, grid reliability (SAIDI/SAIFI), and decarbonization scorecards.' }
+          ],
+          worldImpact: {
+            headline: 'Accelerating Decarbonization & Reliable Clean Power for Every Community',
+            narrative: 'Every percentage point of improved grid forecasting allows utilities to integrate more wind and solar power while preventing blackouts during extreme weather events.',
+            metrics: [
+              { value: '+22%', label: 'Higher Renewable Grid Integration Efficiency' },
+              { value: '-35%', label: 'Faster Storm Outage Detection & Restoration' },
+              { value: '18%', label: 'Peak Load Reduction via Smart Demand Programs' }
+            ],
+            pillars: [
+              'Enabling higher penetration of zero-carbon solar and wind energy without compromising grid stability.',
+              'Helping low-income households lower monthly utility bills through personalized AI usage insights.',
+              'Strengthening climate resilience by predicting storm and wildfire risks to critical transmission lines.'
+            ]
+          },
+          relatedCaseStudyId: 'de-1'
+        },
+
+        'education': {
+          id: 'education',
+          slug: 'industries/education',
+          shortTitle: 'Education & EdTech',
+          title: 'Higher Education & EdTech Platforms',
+          tagline: 'Empowering institutions and learning platforms with longitudinal student analytics, child-data privacy governance, and adaptive AI learning.',
+          accent: 'purple',
+          heroImage: 'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1400&q=80',
+          overview: 'Universities, K–12 school systems, and global EdTech innovators hold the key to unlocking human potential—yet student engagement, assessment, and enrollment data often sit trapped in disconnected LMS and SIS platforms. Piruzi Infotech builds governed, student-first intelligence ecosystems.',
+          requirements: [
+            {
+              title: 'FERPA, COPPA & Student Privacy Governance',
+              desc: 'Safeguard minor and student records with strict role-based permissions, anonymization, and ethical AI guardrails.'
+            },
+            {
+              title: 'Longitudinal Learner 360 Master Data',
+              desc: 'Connect admissions, LMS coursework, advising, and career outcomes into a unified student success profile.'
+            },
+            {
+              title: 'Early-Alert Student Retention & Advising AI',
+              desc: 'Identify disengaged or at-risk learners early in the semester so advisors can provide timely mentorship and financial aid support.'
+            },
+            {
+              title: 'Adaptive Curriculum & Institutional BI',
+              desc: 'Personalize learning pathways to each student’s pace while giving academic leaders clear visibility into program outcomes.'
+            }
+          ],
+          solutionsMapping: [
+            { service: 'Data Governance', detail: 'FERPA/COPPA data classification, ethical AI guidelines, and institutional data catalogs.' },
+            { service: 'Master Data Management', detail: 'Unified Learner 360, course catalog, and faculty credential golden records.' },
+            { service: 'AI Marketing & Product', detail: 'Adaptive learning recommendation engines and student dropout early-warning models.' },
+            { service: 'BI Reporting', detail: 'Enrollment funnel, graduation equity, and accreditation readiness dashboards.' }
+          ],
+          worldImpact: {
+            headline: 'Democratizing Personalized Education & Closing Opportunity Gaps',
+            narrative: 'When educators have timely, ethical insights into how each student learns, graduation rates rise—especially for first-generation college students and learners in under-resourced communities.',
+            metrics: [
+              { value: '+19%', label: 'Increase in First-Generation Student Retention' },
+              { value: '100%', label: 'FERPA & Child Data Privacy Compliance' },
+              { value: '3x', label: 'Faster Advisor Intervention for At-Risk Learners' }
+            ],
+            pillars: [
+              'Closing graduation equity gaps by flagging academic or financial hurdles before students drop out.',
+              'Delivering AI-assisted personalized tutoring pathways accessible on low-bandwidth mobile devices.',
+              'Protecting young learners from exploitative data monetization through strict privacy-by-design governance.'
+            ]
+          },
+          relatedCaseStudyId: 'bi-1'
+        },
+
+        'public-sector': {
+          id: 'public-sector',
+          slug: 'industries/public-sector',
+          shortTitle: 'Public Sector & Smart Cities',
+          title: 'Public Sector, Civic Infrastructure & Smart Cities',
+          tagline: 'Building transparent, citizen-centric digital governments and sustainable urban ecosystems powered by open, interoperable data.',
+          accent: 'teal',
+          heroImage: 'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1400&q=80',
+          overview: 'Municipalities, public transit authorities, and civic agencies are reimagining how cities serve residents. Piruzi Infotech partners with public-sector programs to break down inter-departmental silos, launch transparent open-data portals, and optimize urban mobility, water, and sanitation systems.',
+          requirements: [
+            {
+              title: 'Cross-Agency Citizen & Property MDM',
+              desc: 'Unify fragmented municipal records so citizens access healthcare, housing, and welfare benefits seamlessly without repetitive paperwork.'
+            },
+            {
+              title: 'Open Data Governance & Sovereign Security',
+              desc: 'Publish privacy-protected civic datasets for researchers and entrepreneurs while maintaining strict data sovereignty.'
+            },
+            {
+              title: 'Smart Mobility, Air Quality & Water Telemetry',
+              desc: 'Process real-time traffic, public transit, waste-collection, and environmental sensor streams at city scale.'
+            },
+            {
+              title: 'Transparent Civic Performance BI',
+              desc: 'Equip mayors, city planners, and citizens with real-time dashboards tracking infrastructure budgets, response times, and sustainability targets.'
+            }
+          ],
+          solutionsMapping: [
+            { service: 'Data Governance', detail: 'Sovereign data privacy frameworks, open-data anonymization, and inter-agency data sharing agreements.' },
+            { service: 'Master Data Management', detail: 'Unified Citizen Service 360 and geospatial parcel/infrastructure asset registries.' },
+            { service: 'Data Engineering', detail: 'Real-time transit, air-quality, and municipal utility IoT lakehouses.' },
+            { service: 'BI Reporting', detail: 'Public transparency scorecards, emergency response analytics, and SDG progress trackers.' }
+          ],
+          worldImpact: {
+            headline: 'Creating Cleaner, Safer, More Equitable Cities for Every Citizen',
+            narrative: 'Data-driven governance turns tax dollars into measurable human wellbeing—reducing commute congestion, ensuring clean water distribution, and delivering rapid public assistance to vulnerable citizens.',
+            metrics: [
+              { value: '-27%', label: 'Reduction in Urban Transit Congestion & Idle Emissions' },
+              { value: '4x', label: 'Faster Citizen Welfare & Benefit Eligibility Processing' },
+              { value: '100%', label: 'Transparent Public Infrastructure KPI Reporting' }
+            ],
+            pillars: [
+              'Reducing urban air pollution and commute times through AI-optimized public transit corridors.',
+              'Eliminating bureaucratic friction so low-income families receive healthcare and housing support rapidly.',
+              'Conserving municipal water and energy via predictive leak detection and smart street-lighting telemetry.'
+            ]
+          },
+          relatedCaseStudyId: 'dg-4'
+        }
+      },
+
+      /**
        * 8 CASE STUDIES:
-       * - 4 Case Studies for Data Governance (dg-1 through dg-4)
-       * - 1 Case Study each for AI Marketing & Product, MDM, Data Engineering, and BI Reporting
+       * - 4 Case Studies for Data Governance (dg-1 to dg-4)
+       * - 1 Case Study for AI-Based Marketing & Product Development (ai-1)
+       * - 1 Case Study for Master Data Management (mdm-1)
+       * - 1 Case Study for Data Engineering (de-1)
+       * - 1 Case Study for Business Intelligence Reporting (bi-1)
        */
       caseStudies: [
         {
           id: 'dg-1',
           serviceId: 'data-governance',
           serviceLabel: 'Data Governance',
+          title: 'Enterprise Data Governance & Regulatory Lineage for a Global Banking Group',
           clientType: 'Global Retail & Commercial Bank',
-          title: 'Achieving 99.6% Regulatory Compliance & Automated Data Lineage Across 40+ Legacy Systems',
-          summary: 'How Piruzi Infotech unified fragmented risk data, automated column-level lineage, and eliminated manual audit bottlenecks for a Tier-1 banking institution.',
-          image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1200&q=80',
-          readTime: '6 min read',
+          readTime: '5 min read',
+          image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Established a federated governance operating model, automated data quality checks, and end-to-end lineage across 140+ core banking and risk reporting datasets.',
           heroMetrics: [
-            { value: '99.6%', label: 'BCBS 239 Compliance Score' },
-            { value: '42', label: 'Legacy Systems Cataloged' },
-            { value: '70%', label: 'Faster Regulatory Audit Prep' }
+            { value: '99.6%', label: 'BCBS 239 Audit Readiness' },
+            { value: '78%', label: 'Fewer Data Quality Incidents' },
+            { value: '6 wks', label: 'Faster Risk Report Sign-Off' }
           ],
-          challenge: 'Operating across 14 countries with over 40 core banking and risk platforms, the bank faced mounting regulatory scrutiny under BCBS 239 and GDPR. Risk officers spent thousands of hours manually tracing spreadsheet formulas to prove the accuracy of capital adequacy reports, while inconsistent customer definitions caused recurring audit observations.',
-          solution: 'Piruzi Infotech established a federated Data Governance Operating Model led by domain Data Stewards across Retail, Treasury, and Risk. We deployed Microsoft Purview integrated with automated lineage scanners to harvest metadata across Snowflake, Oracle, and mainframe feeds, pairing critical data elements (CDEs) with automated Great Expectations data quality checks.',
+          challenge: 'Fragmented data ownership across regional banking units led to inconsistent risk metrics, manual reconciliation spreadsheets, and high audit preparation effort ahead of regulatory examinations.',
+          solution: 'Piruzi Infotech designed a federated Data Governance council, cataloged Critical Data Elements (CDEs), implemented automated column-level lineage, and deployed continuous data quality thresholds across ingestion and reporting layers.',
           impact: [
-            'Reduced regulatory report certification cycles from 3 weeks to 4 days.',
-            'Mapped end-to-end column-level lineage for 1,400+ Critical Data Elements.',
-            'Automated daily data quality anomaly alerts, preventing downstream risk reporting errors.'
+            'Achieved 99.6% compliance readiness across statutory and internal risk reporting.',
+            'Cut manual reconciliation cycles by over 6 weeks per quarter.',
+            'Established clear domain data stewards with measurable SLA scorecards.'
           ],
-          techUsed: ['Microsoft Purview', 'Snowflake', 'Great Expectations', 'Python', 'Power BI']
+          techUsed: ['Microsoft Purview', 'Snowflake', 'dbt', 'Great Expectations', 'Power BI']
         },
         {
           id: 'dg-2',
           serviceId: 'data-governance',
           serviceLabel: 'Data Governance',
-          clientType: 'Multi-State Healthcare Network',
-          title: 'Implementing Role-Based Access & Automated PII/PHI Masking for 12M+ Patient Records',
-          summary: 'Enabling clinical researchers and analytics teams to innovate safely while enforcing zero-trust HIPAA privacy controls across cloud data lakes.',
-          image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1200&q=80',
-          readTime: '5 min read',
+          title: 'Automated Metadata Catalog & Data Stewardship Across a Multi-Hospital Healthcare Network',
+          clientType: 'Integrated Healthcare Provider',
+          readTime: '4 min read',
+          image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Unified clinical, claims, and operational metadata into a searchable enterprise catalog with automated PHI classification and role-based access governance.',
           heroMetrics: [
-            { value: '12M+', label: 'Patient Records Protected' },
-            { value: '100%', label: 'Automated PHI Classification' },
-            { value: '5x', label: 'Faster Research Dataset Provisioning' }
+            { value: '100%', label: 'PHI & Sensitive Field Tagged' },
+            { value: '3.4x', label: 'Faster Analytics Dataset Access' },
+            { value: '0', label: 'Unauthorized Data Exposures' }
           ],
-          challenge: 'A rapidly expanding healthcare network needed to share clinical outcomes data with internal analytics and population-health teams, but manual de-identification created a 6-week backlog and exposed gaps in granular access auditing across EHR and claims repositories.',
-          solution: 'Piruzi Infotech implemented an automated PII/PHI discovery and classification pipeline using Collibra and custom NLP entity recognizers. We engineered dynamic policy-based access control (ABAC) that automatically masks or tokenizes 28 HIPAA identifiers based on user role, clinical purpose, and consent status.',
+          challenge: 'Analysts and clinical operations teams spent weeks locating trustworthy datasets across EHR, billing, and supply chain systems while navigating complex HIPAA and privacy rules.',
+          solution: 'We deployed an automated metadata discovery and business glossary framework paired with policy-driven access controls so authorized analysts could find and request certified datasets rapidly.',
           impact: [
-            'Zero HIPAA privacy violations across 18 months of continuous multi-department analytics.',
-            'Cut researcher dataset provisioning time from 6 weeks to under 48 hours.',
-            'Delivered real-time access audit trails for hospital compliance officers.'
+            'Automated sensitive PII/PHI tagging across hundreds of clinical and financial tables.',
+            'Reduced dataset discovery and provisioning time from weeks to days.',
+            'Standardized clinical KPI definitions across hospital facilities.'
           ],
-          techUsed: ['Collibra', 'AWS Lake Formation', 'Python NLP', 'Databricks', 'Apache Ranger']
+          techUsed: ['Alation', 'Azure Data Lake', 'Databricks', 'Purview', 'Tableau']
         },
         {
           id: 'dg-3',
           serviceId: 'data-governance',
           serviceLabel: 'Data Governance',
-          clientType: 'Omnichannel E-Commerce Enterprise',
-          title: 'Establishing Federated Data Stewardship & Reducing Data Quality Incidents by 78%',
-          summary: 'Embedding automated data contracts and shift-left quality gates between product engineering squads and enterprise analytics.',
-          image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1200&q=80',
+          title: 'Data Quality Remediation & GxP-Aligned Governance for a Pharmaceutical Enterprise',
+          clientType: 'Biopharma & Commercial Life Sciences',
           readTime: '5 min read',
+          image: 'https://images.unsplash.com/photo-1532187863486-abf9dbad1b69?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Implemented proactive data observability, completeness rules, and traceable lineage across commercial, clinical operations, and supply chain data domains.',
           heroMetrics: [
-            { value: '-78%', label: 'Production Data Incidents' },
-            { value: '150+', label: 'Active Data Contracts' },
-            { value: '$1.8M', label: 'Estimated Annual Rework Saved' }
+            { value: '99.4%', label: 'Completeness & Validity Score' },
+            { value: '-64%', label: 'Pipeline Exception Triage Time' },
+            { value: '100%', label: 'Audit Trail Traceability' }
           ],
-          challenge: 'Frequent schema changes in checkout, inventory, and loyalty microservices repeatedly broke downstream marketing attribution and financial reporting pipelines—eroding executive trust in analytics dashboards.',
-          solution: 'Piruzi Infotech introduced "Shift-Left" Data Governance using YAML-based Data Contracts enforced inside CI/CD pipelines. Every microservice event stream was registered in an enterprise catalog with automated schema validation, freshness SLAs, and dedicated domain stewards.',
+          challenge: 'Silent upstream schema changes and missing reference attributes caused intermittent reporting discrepancies in commercial territory planning and cold-chain logistics.',
+          solution: 'Piruzi Infotech introduced automated schema/freshness/volume monitors, root-cause lineage alerts, and formal data remediation workflows owned by domain stewards.',
           impact: [
-            'Slashed broken downstream BI pipelines and schema-drift incidents by 78% within two quarters.',
-            'Established clear SLA ownership across 18 product engineering teams.',
-            'Restored executive confidence in daily GMV, margin, and cohort retention metrics.'
+            'Caught and resolved data anomalies before they impacted executive dashboards.',
+            'Reduced incident triage time by 64% through automated lineage context.',
+            'Improved executive confidence in commercial and supply chain forecasts.'
           ],
-          techUsed: ['dbt', 'Apache Kafka', 'Alation', 'GitHub Actions', 'Snowflake']
+          techUsed: ['Collibra', 'Snowflake', 'Apache Airflow', 'Monte Carlo', 'Power BI']
         },
         {
           id: 'dg-4',
           serviceId: 'data-governance',
           serviceLabel: 'Data Governance',
-          clientType: 'Multi-National Insurance Provider',
-          title: 'Building an Enterprise Data Catalog & Business Glossary to Accelerate Audit Readiness by 60%',
-          summary: 'Standardizing 2,200+ actuarial, underwriting, and claims definitions across regional subsidiaries following three major acquisitions.',
-          image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80',
-          readTime: '6 min read',
+          title: 'Privacy-By-Design & Access Governance Modernization for a Digital Insurer',
+          clientType: 'Property & Casualty Insurance Provider',
+          readTime: '4 min read',
+          image: 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Operationalized consent tracking, dynamic data masking, and retention lifecycle policies to comply with modern privacy regulations without slowing analytics.',
           heroMetrics: [
-            { value: '2,200+', label: 'Standardized Business Terms' },
-            { value: '60%', label: 'Faster Statutory Audit Readiness' },
-            { value: '450+', label: 'Active Catalog Users' }
+            { value: '<15 min', label: 'DSAR & Privacy Request SLA' },
+            { value: '100%', label: 'Dynamic Masking on Non-Prod' },
+            { value: '-35%', label: 'Redundant Cold Storage Cost' }
           ],
-          challenge: 'Following three regional acquisitions, the insurer operated with conflicting definitions for core terms like "Active Policy," "Earned Premium," and "Loss Ratio," stalling post-merger reporting and actuarial modeling.',
-          solution: 'Piruzi Infotech facilitated cross-regional governance workshops to harmonize 2,200+ business glossary terms and link each certified definition directly to physical tables, transformation logic, and executive dashboards inside Alation.',
+          challenge: 'Rapid growth in policyholder and claims data created compliance exposure around data minimization, retention schedules, and mask enforcement in non-production environments.',
+          solution: 'We implemented automated PII classification, dynamic column masking by user role, customer consent tracking, and policy-driven archival/purge automation.',
           impact: [
-            'Eliminated metric discrepancies across 4 regional P&L reporting units.',
-            'Accelerated statutory and solvency audit preparation by 60%.',
-            'Enabled self-service data discovery for 450+ actuaries and business analysts.'
+            'Eliminated raw customer PII exposure in lower/analytics environments.',
+            'Automated data retention and deletion lifecycles aligned with privacy mandates.',
+            'Cut cold storage overhead by 35% by archiving expired records.'
           ],
-          techUsed: ['Alation', 'Azure Synapse', 'Power BI', 'Informatica', 'SQL']
+          techUsed: ['Microsoft Purview', 'AWS Glue', 'Snowflake', 'dbt', 'IAM / RBAC']
         },
         {
           id: 'ai-1',
           serviceId: 'ai-marketing-product',
           serviceLabel: 'AI Marketing & Product',
-          clientType: 'High-Growth D2C Consumer Brand',
-          title: 'Boosting Repeat Purchase Revenue by 34% via Predictive Churn & Next-Best-Offer AI Engine',
-          summary: 'Deploying real-time propensity scoring and personalized product recommendations across web, mobile app, and lifecycle CRM channels.',
-          image: 'https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1200&q=80',
-          readTime: '7 min read',
+          title: 'AI-Driven Customer Churn Prevention & Hyper-Personalization for an Omnichannel Retailer',
+          clientType: 'Omnichannel Consumer Retail Brand',
+          readTime: '6 min read',
+          image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Deployed propensity-to-churn models and personalized offer ranking to lift repeat purchase rates and marketing ROI across web, mobile, and loyalty channels.',
           heroMetrics: [
-            { value: '+34%', label: 'Repeat Purchase Revenue' },
-            { value: '2.9x', label: 'CRM Campaign Conversion Lift' },
-            { value: '-22%', label: '90-Day Customer Churn Rate' }
+            { value: '+34%', label: 'Repeat Purchase Lift' },
+            { value: '3.2x', label: 'Targeted Campaign ROI' },
+            { value: '-22%', label: '90-Day High-Value Churn' }
           ],
-          challenge: 'The brand relied on broad batch-and-blast promotional discounts that eroded gross margins while failing to prevent second-purchase drop-off among newly acquired customers.',
-          solution: 'Piruzi Infotech engineered a customer intelligence platform combining gradient-boosted churn propensity models, LTV forecasting, and collaborative-filtering Next-Best-Offer APIs integrated directly into their mobile app and Braze CRM.',
+          challenge: 'Broad promotional campaigns wasted marketing budget on discount-prone shoppers while failing to retain high-LTV customers showing early signs of disengagement.',
+          solution: 'Piruzi Infotech engineered behavioral feature pipelines and trained gradient-boosted propensity and next-best-offer models integrated directly into CRM and lifecycle campaign orchestration.',
           impact: [
-            'Increased repeat purchase revenue by 34% within 6 months of deployment.',
-            'Reduced unnecessary discount margin leakage by targeting incentives only to high-churn-risk cohorts.',
-            'Delivered sub-80ms personalized product recommendations at checkout.'
+            'Increased repeat purchase conversion by 34% among targeted customer cohorts.',
+            'Improved promotional margin efficiency by replacing blanket discounts with tailored offers.',
+            'Enabled automated weekly retention cohorts for marketing and product teams.'
           ],
-          techUsed: ['Python', 'PyTorch', 'Vertex AI', 'BigQuery', 'Braze API', 'FastAPI']
+          techUsed: ['Python', 'XGBoost / PyTorch', 'Snowflake', 'dbt', 'AWS SageMaker']
         },
         {
           id: 'mdm-1',
           serviceId: 'master-data-management',
           serviceLabel: 'Master Data Management',
-          clientType: 'Global Industrial Manufacturing Group',
-          title: 'Unifying 1.8M Fragmented Supplier & SKU Records into a Single Golden Record',
-          summary: 'Eliminating duplicate vendor spend and standardizing global bill-of-materials data across 11 ERP instances.',
-          image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1200&q=80',
-          readTime: '6 min read',
+          title: 'Multi-Domain Product & Supplier Golden Record Hub for a Global Manufacturer',
+          clientType: 'Industrial & Consumer Manufacturing Enterprise',
+          readTime: '5 min read',
+          image: 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Consolidated duplicate vendor and SKU records across multiple regional ERPs into a unified Master Data Management hub with automated survivorship rules.',
           heroMetrics: [
-            { value: '1.8M', label: 'Records Consolidated' },
-            { value: '$4.2M', label: 'Procurement Savings Identified' },
-            { value: '11', label: 'Regional ERPs Synchronized' }
+            { value: '62%', label: 'Duplicate Vendor Records Merged' },
+            { value: '$4.2M', label: 'Annualized Spend Consolidation' },
+            { value: '99.2%', label: 'Catalog Attribute Accuracy' }
           ],
-          challenge: 'Operating 11 separate SAP and Oracle ERP instances globally, the manufacturer unknowingly purchased identical raw materials from the same suppliers under different vendor IDs and varying contract rates.',
-          solution: 'Piruzi Infotech architected a multi-domain Reltio MDM hub covering Supplier and Material/SKU domains, applying ML-powered fuzzy matching, D-U-N-S enrichment, and automated survivorship rules synchronized bi-directionally with SAP.',
+          challenge: 'Post-merger systems left the organization with duplicate supplier profiles, inconsistent tax/bank identifiers, and fragmented product hierarchies that blocked volume rebate negotiation.',
+          solution: 'Piruzi Infotech architected a multi-domain MDM hub featuring deterministic and fuzzy entity resolution, stewardship approval workflows, and clean golden record syndication back to ERP and analytics.',
           impact: [
-            'Consolidated 1.8M raw vendor and material records into 620K verified Golden Records.',
-            'Unlocked $4.2M in volume-discount procurement consolidation in Year 1.',
-            'Reduced new vendor onboarding cycle time from 14 days to 24 hours.'
+            'Merged over 60% of duplicate supplier records into trusted golden entities.',
+            'Unlocked multi-million-dollar contract consolidation and rebate opportunities.',
+            'Standardized product taxonomy for e-commerce and supply chain reporting.'
           ],
-          techUsed: ['Reltio MDM', 'SAP S/4HANA', 'Informatica', 'Apache Kafka', 'Snowflake']
+          techUsed: ['Reltio / Informatica MDM', 'Apache Kafka', 'Snowflake', 'dbt', 'Power BI']
         },
         {
           id: 'de-1',
           serviceId: 'data-engineering',
           serviceLabel: 'Data Engineering',
-          clientType: 'High-Volume FinTech Payments Platform',
-          title: 'Migrating Legacy Batch Warehouses to a Real-Time Lakehouse Processing 50M+ Daily Events',
-          summary: 'Re-architecting monolithic overnight ETL jobs into an event-driven Databricks lakehouse with sub-minute fraud and settlement visibility.',
-          image: 'https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=1200&q=80',
+          title: 'Real-Time Cloud Lakehouse & Streaming Pipeline Modernization for a FinTech Platform',
+          clientType: 'Digital Payments & FinTech Enterprise',
           readTime: '6 min read',
+          image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Replaced legacy batch ETL jobs with a streaming cloud lakehouse and modular dbt transformations, cutting latency from hours to seconds while reducing cloud spend.',
           heroMetrics: [
-            { value: '50M+', label: 'Daily Events Ingested' },
-            { value: '<30 sec', label: 'End-to-End Data Latency' },
-            { value: '-42%', label: 'Annual Infrastructure Cost' }
+            { value: '<30 sec', label: 'End-to-End Event Latency' },
+            { value: '-40%', label: 'Cloud Compute Cost Reduction' },
+            { value: '50M+', label: 'Daily Events Processed' }
           ],
-          challenge: 'Nightly batch ETL windows frequently overran into morning business hours, delaying merchant settlement reporting and starving real-time risk models of fresh transaction signals.',
-          solution: 'Piruzi Infotech migrated the platform to a Medallion Lakehouse architecture on Databricks and AWS, utilizing Debezium CDC, Apache Kafka, Spark Structured Streaming, and modular dbt pipelines with automated CI/CD.',
+          challenge: 'Overnight batch jobs delayed transaction and settlement visibility until the next morning, while unoptimized warehouse queries drove escalating cloud infrastructure bills.',
+          solution: 'We re-architected ingestion around event streaming and Medallion lakehouse layers with incremental dbt models, partition pruning, and warehouse auto-scaling policies.',
           impact: [
-            'Reduced data availability latency from 14 hours (batch) to under 30 seconds.',
-            'Cut cloud compute and storage costs by 42% through Photon optimization and auto-scaling clusters.',
-            'Achieved 99.98% pipeline uptime across peak holiday payment volumes.'
+            'Reduced data freshness latency from overnight batch to near real-time.',
+            'Cut monthly cloud compute and storage spend by 40%.',
+            'Automated CI/CD testing and schema validation across all data pipelines.'
           ],
-          techUsed: ['Databricks', 'Apache Kafka', 'Apache Spark', 'dbt', 'AWS', 'Terraform']
+          techUsed: ['Databricks', 'Apache Kafka', 'dbt', 'Apache Airflow', 'AWS / Snowflake']
         },
         {
           id: 'bi-1',
           serviceId: 'business-intelligence',
           serviceLabel: 'BI Reporting',
-          clientType: 'Enterprise Logistics & Supply Chain Leader',
-          title: 'Consolidating 120+ Siloed Spreadsheets into Real-Time Executive Power BI Command Centers',
-          summary: 'Delivering unified on-time-in-full (OTIF), fleet utilization, and lane profitability visibility across 65 distribution hubs.',
-          image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=1200&q=80',
-          readTime: '5 min read',
+          title: 'Unified Executive Command Center & Self-Service BI for a Logistics Conglomerate',
+          clientType: 'Global Supply Chain & Logistics Provider',
+          readTime: '4 min read',
+          image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=1000&q=80',
+          summary: 'Delivered a governed semantic layer and executive BI suite tracking on-time delivery, lane profitability, and fleet utilization across regional hubs.',
           heroMetrics: [
-            { value: '120+', label: 'Manual Reports Retired' },
-            { value: '+11%', label: 'Fleet Route Utilization' },
-            { value: '1,200+', label: 'Daily Active BI Users' }
+            { value: '85%', label: 'Less Manual Spreadsheet Work' },
+            { value: '4.5x', label: 'Weekly Active BI Users' },
+            { value: '100%', label: 'Single Governed KPI Layer' }
           ],
-          challenge: 'Regional operations managers spent every Monday manually merging CSV exports from warehouse management (WMS) and telematics systems, leaving leadership blind to carrier delays and margin erosion until month-end.',
-          solution: 'Piruzi Infotech designed a governed semantic data model in Microsoft Fabric & Power BI with row-level security, delivering interactive Executive Command Centers with automated anomaly alerts and mobile drill-downs.',
+          challenge: 'Regional operations teams built conflicting Excel reports with inconsistent on-time-in-full (OTIF) and margin formulas, slowing executive weekly business reviews.',
+          solution: 'Piruzi Infotech established a single semantic metric layer feeding interactive executive scorecards and role-scoped self-service views with row-level security.',
           impact: [
-            'Eliminated 120+ recurring manual spreadsheets, saving 600+ analyst hours monthly.',
-            'Improved fleet route utilization by 11% through real-time lane profitability visibility.',
-            'Scaled adoption to 1,200+ regional managers and executives with sub-2-second query response.'
+            'Eliminated conflicting KPI definitions across regional operations and finance.',
+            'Saved analysts hundreds of hours previously spent stitching spreadsheets.',
+            'Accelerated weekly operational decision-making with drill-down root-cause views.'
           ],
-          techUsed: ['Microsoft Power BI', 'Microsoft Fabric', 'Snowflake', 'DAX', 'Azure Data Factory']
-        }
-      ],
-
-      /**
-       * 5 OPEN POSITIONS FOR CAREERS PAGE
-       */
-      jobs: [
-        {
-          id: 'job-1',
-          title: 'Senior Data Governance Consultant',
-          department: 'Data Governance',
-          location: 'Remote / Hybrid (Indore / Bengaluru)',
-          type: 'Full-Time',
-          experience: '6+ Years',
-          summary: 'Lead enterprise data governance implementations, stewardship operating models, and metadata catalog rollouts for global banking, healthcare, and retail clients.',
-          responsibilities: [
-            'Design federated Data Governance frameworks, data policies, and RACI stewardship models.',
-            'Implement enterprise data catalogs and automated lineage using Collibra, Alation, or Microsoft Purview.',
-            'Partner with CDOs, legal, and compliance teams on GDPR, DPDPA, and HIPAA data privacy controls.',
-            'Define Critical Data Elements (CDEs) and automated data quality rulebooks.'
-          ],
-          qualifications: [
-            '6+ years of hands-on experience in Enterprise Data Governance, Data Quality, or Metadata Management.',
-            'Deep familiarity with at least one leading governance platform (Purview, Collibra, Alation, Informatica).',
-            'Strong executive communication skills and consultative problem-solving mindset.'
-          ]
-        },
-        {
-          id: 'job-2',
-          title: 'Lead Data Engineer — Cloud & Lakehouse',
-          department: 'Data Engineering',
-          location: 'Remote / Hybrid (India)',
-          type: 'Full-Time',
-          experience: '5–9 Years',
-          summary: 'Architect scalable cloud lakehouse platforms, streaming ingestion pipelines, and modular dbt transformation frameworks on Snowflake and Databricks.',
-          responsibilities: [
-            'Design and build high-throughput batch and real-time streaming pipelines using Spark, Kafka, and Python.',
-            'Lead legacy warehouse migrations into Snowflake or Databricks Medallion architectures.',
-            'Establish DataOps best practices, CI/CD automation, and automated data testing with dbt.',
-            'Mentor mid-level data engineers and conduct architecture reviews.'
-          ],
-          qualifications: [
-            '5+ years in Data Engineering with strong mastery of SQL, Python, and distributed processing (Spark).',
-            'Production experience with Snowflake or Databricks and AWS/Azure/GCP cloud ecosystems.',
-            'Hands-on expertise with dbt, Airflow, and infrastructure-as-code (Terraform).'
-          ]
-        },
-        {
-          id: 'job-3',
-          title: 'AI / ML Solutions Architect — Marketing & Product',
-          department: 'AI Marketing & Product',
-          location: 'Remote / Hybrid (India)',
-          type: 'Full-Time',
-          experience: '6+ Years',
-          summary: 'Build predictive customer LTV models, recommendation engines, and production Generative AI RAG applications that drive measurable product and revenue growth.',
-          responsibilities: [
-            'Architect end-to-end ML solutions for churn prediction, dynamic pricing, and personalization.',
-            'Design secure, low-latency Generative AI copilots and RAG pipelines using modern LLMs and vector databases.',
-            'Collaborate with client product and growth leaders to translate business KPIs into ML experimentation roadmaps.',
-            'Ensure MLOps monitoring, drift detection, and responsible AI guardrails.'
-          ],
-          qualifications: [
-            '6+ years building and deploying production ML/AI models in Python (PyTorch, Scikit-Learn, LangChain).',
-            'Proven track record in customer analytics, growth marketing science, or AI product engineering.',
-            'Experience deploying scalable inference endpoints on AWS SageMaker, Vertex AI, or Azure ML.'
-          ]
-        },
-        {
-          id: 'job-4',
-          title: 'Master Data Management (MDM) Specialist',
-          department: 'Master Data Management',
-          location: 'Remote / Hybrid (India)',
-          type: 'Full-Time',
-          experience: '4–8 Years',
-          summary: 'Design multi-domain Customer, Product, and Supplier MDM hubs, fuzzy matching rules, and real-time API integrations across enterprise ERPs and CRMs.',
-          responsibilities: [
-            'Configure multi-domain entity data models, match/merge survivorship rules, and hierarchy management.',
-            'Implement real-time and batch integrations between MDM hubs (Reltio/Informatica/Profisee) and SAP/Salesforce.',
-            'Collaborate with data stewards to tune deterministic and probabilistic matching thresholds.'
-          ],
-          qualifications: [
-            '4+ years implementing MDM platforms such as Informatica MDM, Reltio, Profisee, or Semarchy.',
-            'Strong understanding of data modeling, REST/GraphQL APIs, and ETL/ELT integration patterns.',
-            'Experience across Customer 360 or Product Information Management (PIM) initiatives.'
-          ]
-        },
-        {
-          id: 'job-5',
-          title: 'Senior Business Intelligence Developer (Power BI / Tableau)',
-          department: 'BI Reporting',
-          location: 'Remote / Hybrid (Indore / Bengaluru)',
-          type: 'Full-Time',
-          experience: '4+ Years',
-          summary: 'Craft executive-ready Power BI and Tableau command centers backed by clean semantic layers, optimized DAX, and intuitive UX design.',
-          responsibilities: [
-            'Design and develop interactive executive dashboards with high visual polish and sub-2-second performance.',
-            'Build governed semantic models, complex DAX/LookML measures, and row-level security (RLS).',
-            'Partner with finance, sales, and supply chain stakeholders to standardize KPI definitions.'
-          ],
-          qualifications: [
-            '4+ years of deep experience with Microsoft Power BI (DAX, Power Query, Fabric) or Tableau.',
-            'Strong SQL skills and dimensional modeling (Star/Snowflake schema) fundamentals.',
-            'A keen eye for visual hierarchy, storytelling with data, and user experience.'
-          ]
+          techUsed: ['Microsoft Power BI', 'Snowflake', 'dbt', 'SQL', 'Row-Level Security']
         }
       ]
     };
@@ -981,6 +1379,7 @@
     // 1. HOME PAGE VIEW
     function renderHomePage() {
       const servicesList = Object.values(SITE_DATA.services);
+      const industriesList = Object.values(SITE_DATA.industries);
       const featuredStudies = [
         SITE_DATA.caseStudies[0], // Data Governance
         SITE_DATA.caseStudies[4], // AI Marketing & Product
@@ -1190,6 +1589,69 @@
                     <p class="text-sm text-slate-600 leading-relaxed">${item.desc}</p>
                   </div>
                 `).join('')}
+              </div>
+            </div>
+          </section>
+
+          <!-- INDUSTRIES WE TRANSFORM SHOWCASE -->
+          <section class="py-20 lg:py-24 bg-navy-950 text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-enterprise-grid opacity-20 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+              <div class="max-w-3xl mx-auto text-center space-y-4 mb-14">
+                <span class="inline-block px-3.5 py-1 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                  Industries &amp; Purpose-Driven Impact
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl text-white tracking-tight">
+                  Industries We Transform — Making the World a Better Place
+                </h2>
+                <p class="text-base sm:text-lg text-slate-300">
+                  Discover how Piruzi Infotech addresses sector-specific data and AI challenges while driving measurable human, environmental, and societal progress across 7 vital industries.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                ${industriesList.map(ind => {
+                  const colors = getAccentClasses(ind.accent);
+                  return `
+                    <a href="#${ind.slug}" data-route="${ind.slug}"
+                       class="group rounded-2xl p-6 bg-navy-900/90 border border-slate-800 hover:border-blue-500/60 hover:bg-navy-800/90 transition-all duration-300 flex flex-col justify-between">
+                      <div>
+                        <div class="w-11 h-11 rounded-xl ${colors.iconBg} flex items-center justify-center mb-5">
+                          ${getIndustryIconSvg(ind.id, 'w-5 h-5')}
+                        </div>
+                        <h3 class="font-display font-bold text-lg text-white group-hover:text-blue-300 transition-colors mb-2">
+                          ${ind.title}
+                        </h3>
+                        <p class="text-xs sm:text-sm text-slate-400 leading-relaxed line-clamp-3 mb-4">
+                          ${ind.tagline}
+                        </p>
+                      </div>
+                      <div class="pt-3 border-t border-slate-800/90 flex items-center justify-between text-xs font-bold text-teal-400 group-hover:text-teal-300">
+                        <span>Explore Sector &amp; Impact</span>
+                        <span class="transform group-hover:translate-x-1 transition-transform">&rarr;</span>
+                      </div>
+                    </a>
+                  `;
+                }).join('')}
+
+                <!-- 8th Purpose Card -->
+                <div class="rounded-2xl p-6 bg-gradient-to-br from-emerald-900/50 to-teal-900/40 border border-emerald-500/30 flex flex-col justify-between">
+                  <div>
+                    <span class="inline-block px-2.5 py-1 rounded-full text-[11px] font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 mb-4">
+                      Tech For Good
+                    </span>
+                    <h3 class="font-display font-bold text-lg text-white mb-2">
+                      Purpose-Built Data &amp; Ethical AI
+                    </h3>
+                    <p class="text-xs sm:text-sm text-slate-300 leading-relaxed">
+                      Every architecture we design prioritizes privacy, sustainability, and human wellbeing alongside enterprise ROI.
+                    </p>
+                  </div>
+                  <a href="#contact" data-route="contact"
+                     class="mt-5 inline-flex items-center justify-center w-full px-4 py-2.5 rounded-xl text-xs font-bold bg-emerald-500 hover:bg-emerald-400 text-navy-950 transition-all">
+                    Partner With Us &rarr;
+                  </a>
+                </div>
               </div>
             </div>
           </section>
@@ -1408,6 +1870,240 @@
                   <a href="#${other.slug}" data-route="${other.slug}"
                      class="p-4 rounded-xl bg-white border border-slate-200 hover:border-blue-500 shadow-xs transition-all flex items-center justify-between group">
                     <span class="text-sm font-bold text-navy-900 group-hover:text-blue-600">${other.shortTitle}</span>
+                    <span class="text-slate-400 group-hover:text-blue-600">&rarr;</span>
+                  </a>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+        </div>
+      `;
+    }
+
+    // DEDICATED INDUSTRY PAGE VIEW (Used for all 7 Industries)
+    function renderIndustryPage(industryId) {
+      const ind = SITE_DATA.industries[industryId];
+      if (!ind) return renderHomePage();
+
+      const colors = getAccentClasses(ind.accent);
+      const relatedStudy = SITE_DATA.caseStudies.find(cs => cs.id === ind.relatedCaseStudyId) || SITE_DATA.caseStudies[0];
+      const otherIndustries = Object.values(SITE_DATA.industries).filter(item => item.id !== ind.id);
+
+      return `
+        <div class="page-animate">
+          <!-- Industry Hero Banner -->
+          <section class="bg-hero-mesh text-white py-16 lg:py-24 relative overflow-hidden">
+            <div class="absolute inset-0 bg-enterprise-grid opacity-25 pointer-events-none"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+              <!-- Breadcrumb -->
+              <nav class="flex items-center gap-2 text-xs font-medium text-slate-400 mb-6">
+                <a href="#home" data-route="home" class="hover:text-white">Home</a>
+                <span>/</span>
+                <span class="text-slate-300">Industries</span>
+                <span>/</span>
+                <span class="text-teal-300 font-semibold">${ind.shortTitle}</span>
+              </nav>
+
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                  <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold border ${colors.darkBadge}">
+                    ${getIndustryIconSvg(ind.id, 'w-4 h-4')}
+                    <span>INDUSTRY PRACTICE</span>
+                  </span>
+                  <h1 class="font-display font-extrabold text-3xl sm:text-5xl leading-tight">
+                    ${ind.title}
+                  </h1>
+                  <p class="text-lg text-slate-300 leading-relaxed">
+                    ${ind.tagline}
+                  </p>
+                  <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#contact" data-route="contact"
+                       class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-gradient-to-r ${colors.gradient} shadow-lg hover:opacity-95 transition-all">
+                      <span>Consult Our ${ind.shortTitle} Team</span>
+                      <span>&rarr;</span>
+                    </a>
+                    <a href="#case-study/${relatedStudy.id}" data-route="case-study/${relatedStudy.id}"
+                       class="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-bold text-white bg-white/10 hover:bg-white/15 border border-white/20 transition-all">
+                      <span>Read Sector Case Study</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="lg:col-span-5">
+                  <div class="rounded-2xl overflow-hidden border border-white/15 shadow-2xl">
+                    <img src="${ind.heroImage}" alt="${ind.title}"
+                         onerror="this.src='https://placehold.co/900x600/0F172A/38BDF8?text=${encodeURIComponent(ind.shortTitle)}'"
+                         class="w-full h-72 sm:h-80 object-cover" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Executive Industry Context -->
+          <section class="py-14 bg-white border-b border-slate-200/80">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-4">
+              <span class="text-xs font-bold uppercase tracking-wider ${colors.text}">Sector Landscape</span>
+              <h2 class="font-display font-bold text-2xl sm:text-3xl text-navy-900">
+                Navigating Data Complexity in ${ind.shortTitle}
+              </h2>
+              <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
+                ${ind.overview}
+              </p>
+            </div>
+          </section>
+
+          <!-- SECTION 1: Industry Requirements & Data Challenges -->
+          <section class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="max-w-3xl mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider ${colors.text}">01 &bull; Sector Imperatives</span>
+                <h2 class="font-display font-extrabold text-3xl text-navy-900 mt-2">
+                  Industry Requirements &amp; Data Challenges
+                </h2>
+                <p class="text-slate-600 mt-2">
+                  Key regulatory, architectural, and operational demands facing modern ${ind.shortTitle.toLowerCase()} leaders.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-7">
+                ${ind.requirements.map((req, idx) => `
+                  <div class="bg-white rounded-2xl p-7 border border-slate-200/90 shadow-card">
+                    <div class="flex items-center gap-3 mb-4">
+                      <span class="w-8 h-8 rounded-lg ${colors.iconBg} font-display font-bold text-sm flex items-center justify-center shrink-0">
+                        0${idx + 1}
+                      </span>
+                      <h3 class="font-display font-bold text-xl text-navy-900">${req.title}</h3>
+                    </div>
+                    <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                      ${req.desc}
+                    </p>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 2: How Piruzi Infotech Solves Them (Mapping Our 5 Core Domains) -->
+          <section class="py-20 bg-white border-y border-slate-200/80">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="max-w-3xl mb-12">
+                <span class="text-xs font-bold uppercase tracking-wider text-blue-600">02 &bull; Integrated Capabilities</span>
+                <h2 class="font-display font-extrabold text-3xl text-navy-900 mt-2">
+                  How Piruzi Infotech Solves Them
+                </h2>
+                <p class="text-slate-600 mt-2">
+                  Applying our core practices in Governance, MDM, Data Engineering, AI, and BI to deliver measurable sector resilience.
+                </p>
+              </div>
+
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                ${ind.solutionsMapping.map(sol => `
+                  <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200/80 flex items-start gap-4">
+                    <div class="w-10 h-10 rounded-xl bg-navy-900 text-teal-400 flex items-center justify-center shrink-0 mt-0.5">
+                      <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M5 13l4 4L19 7"/></svg>
+                    </div>
+                    <div>
+                      <div class="text-xs font-bold uppercase tracking-wider text-blue-600 mb-1">${sol.service}</div>
+                      <p class="text-sm sm:text-base font-medium text-navy-900 leading-relaxed">${sol.detail}</p>
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </section>
+
+          <!-- SECTION 3: Making the World a Better Place — Societal & Sustainability Impact -->
+          <section class="py-20 lg:py-24 bg-gradient-to-br from-navy-950 via-navy-900 to-emerald-950 text-white relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+              <div class="max-w-3xl space-y-4 mb-12">
+                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider bg-emerald-500/20 text-emerald-300 border border-emerald-400/30">
+                  <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>Making the World a Better Place</span>
+                </span>
+                <h2 class="font-display font-extrabold text-3xl sm:text-4xl leading-tight text-white">
+                  ${ind.worldImpact.headline}
+                </h2>
+                <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                  ${ind.worldImpact.narrative}
+                </p>
+              </div>
+
+              <!-- 3 Concrete Societal / Environmental Metrics -->
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-12">
+                ${ind.worldImpact.metrics.map(m => `
+                  <div class="p-6 rounded-2xl bg-white/5 border border-emerald-400/25 backdrop-blur-xs">
+                    <div class="font-display font-extrabold text-3xl sm:text-4xl text-emerald-400">${m.value}</div>
+                    <div class="text-sm font-medium text-slate-200 mt-1.5">${m.label}</div>
+                  </div>
+                `).join('')}
+              </div>
+
+              <!-- Positive Human & Environmental Pillars -->
+              <div class="rounded-2xl bg-white/5 border border-white/10 p-7 sm:p-8">
+                <h3 class="font-display font-bold text-lg text-teal-300 mb-4">
+                  How Piruzi Infotech Drives Positive Change in ${ind.shortTitle}
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                  ${ind.worldImpact.pillars.map(pillar => `
+                    <div class="flex items-start gap-3">
+                      <span class="w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-300 flex items-center justify-center shrink-0 mt-0.5 text-xs font-bold">&#10003;</span>
+                      <p class="text-sm text-slate-200 leading-relaxed">${pillar}</p>
+                    </div>
+                  `).join('')}
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Related Case Study & Consultation CTA -->
+          <section class="py-20 bg-slate-50">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-6">
+                  <span class="text-xs font-bold uppercase tracking-wider text-blue-600">Featured Client Impact</span>
+                  <h2 class="font-display font-extrabold text-2xl sm:text-3xl text-navy-900 mt-1 mb-6">
+                    See Our Work in Action
+                  </h2>
+                  ${renderCaseStudyCard(relatedStudy)}
+                </div>
+
+                <div class="lg:col-span-6">
+                  <div class="rounded-3xl bg-navy-900 text-white p-8 sm:p-10 shadow-xl space-y-5">
+                    <span class="inline-block px-3 py-1 rounded-full text-xs font-bold bg-blue-500/20 text-blue-300">
+                      Start Your Transformation
+                    </span>
+                    <h3 class="font-display font-extrabold text-2xl sm:text-3xl leading-snug">
+                      Ready to Modernize Your ${ind.shortTitle} Data Ecosystem?
+                    </h3>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                      Schedule a briefing with Piruzi Infotech’s domain architects to discuss compliance, AI innovation, and sustainable impact tailored to your organization.
+                    </p>
+                    <div class="flex flex-wrap gap-4 pt-2">
+                      <a href="#contact" data-route="contact"
+                         class="px-6 py-3.5 rounded-xl text-sm font-bold bg-blue-600 hover:bg-blue-500 text-white transition-all">
+                        Schedule a Consultation &rarr;
+                      </a>
+                      <a href="#insights" data-route="insights"
+                         class="px-6 py-3.5 rounded-xl text-sm font-bold bg-white/10 hover:bg-white/15 text-white border border-white/20 transition-all">
+                        Explore All 8 Case Studies
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Explore Other Industries Strip -->
+          <section class="py-14 bg-white border-t border-slate-200">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h3 class="font-display font-bold text-lg text-navy-900 mb-6">Explore Other Industries We Serve</h3>
+              <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                ${otherIndustries.map(other => `
+                  <a href="#${other.slug}" data-route="${other.slug}"
+                     class="p-4 rounded-xl bg-slate-50 border border-slate-200 hover:border-blue-500 shadow-xs transition-all flex items-center justify-between group">
+                    <span class="text-sm font-bold text-navy-900 group-hover:text-blue-600">${other.title}</span>
                     <span class="text-slate-400 group-hover:text-blue-600">&rarr;</span>
                   </a>
                 `).join('')}
@@ -2040,19 +2736,18 @@
                       <p class="text-sm text-slate-500 mt-1">All fields marked with <span class="text-rose-500">*</span> are required.</p>
                     </div>
 
-                    <!-- Subtle GitHub Deployment Setup Notice for Site Owner 
+                    <!-- Subtle GitHub Deployment Setup Notice for Site Owner -->
                     <div class="mb-6 p-3.5 rounded-xl bg-amber-50 border border-amber-200/90 text-xs text-amber-900 flex items-start gap-2.5">
                       <svg class="w-4 h-4 text-amber-600 shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
                       <div>
                         <strong>GitHub Pages / Web3Forms Ready:</strong> Before deploying to GitHub, replace <code class="px-1.5 py-0.5 rounded bg-amber-100 font-mono font-semibold">YOUR_WEB3FORMS_ACCESS_KEY</code> in <code class="font-mono">index.html</code> with your free access key from <a href="https://web3forms.com" target="_blank" rel="noopener noreferrer" class="underline font-semibold">web3forms.com</a> to receive form submissions directly in your email.
                       </div>
                     </div>
-                    -->
 
                     <!-- WEB3FORMS FORM -->
                     <form id="piruzi-contact-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-5">
                       <!-- Web3Forms Required Access Key & Metadata -->
-                      <input type="hidden" name="access_key" id="web3forms-access-key" value="ad20ba0d-430e-48c8-8940-3c58b95ca1a4" />
+                      <input type="hidden" name="access_key" id="web3forms-access-key" value="YOUR_WEB3FORMS_ACCESS_KEY" />
                       <input type="hidden" name="subject" value="New Website Inquiry — Piruzi Infotech" />
                       <input type="hidden" name="from_name" value="Piruzi Infotech Website" />
                       <!-- Honeypot Spam Protection -->
@@ -2188,6 +2883,7 @@
 
       let activeId = 'nav-home';
       if (path.startsWith('services/')) activeId = 'nav-services';
+      else if (path.startsWith('industries/')) activeId = 'nav-industries';
       else if (path === 'insights' || path.startsWith('case-study/')) activeId = 'nav-insights';
       else if (path === 'about' || path === 'careers') activeId = 'nav-company';
       else if (path === 'contact') activeId = 'nav-contact';
@@ -2216,6 +2912,9 @@
       } else if (path.startsWith('services/')) {
         const serviceId = path.replace('services/', '');
         root.innerHTML = renderServicePage(serviceId);
+      } else if (path.startsWith('industries/')) {
+        const industryId = path.replace('industries/', '');
+        root.innerHTML = renderIndustryPage(industryId);
       } else if (path === 'insights') {
         root.innerHTML = renderInsightsPage(params.filter || 'all');
       } else if (path.startsWith('case-study/')) {
@@ -2359,6 +3058,14 @@
       svcToggle.addEventListener('click', () => {
         svcList.classList.toggle('hidden');
         svcChev.classList.toggle('rotate-180');
+      });
+
+      const indToggle = document.getElementById('mobile-industries-toggle');
+      const indList = document.getElementById('mobile-industries-list');
+      const indChev = document.getElementById('mobile-industries-chevron');
+      indToggle.addEventListener('click', () => {
+        indList.classList.toggle('hidden');
+        indChev.classList.toggle('rotate-180');
       });
 
       const compToggle = document.getElementById('mobile-company-toggle');
